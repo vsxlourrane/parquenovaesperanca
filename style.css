@@ -1,0 +1,385 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #0B3D2E;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================== HEADER =================== */
+header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    float: left;
+    color: #0B3D2E;
+}
+
+header nav {
+    float: right;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #0B3D2E;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #C9A13D;
+}
+
+/* ================== HERO =================== */
+.hero {
+    background: linear-gradient(rgba(11, 61, 46, 0.8), rgba(11, 61, 46, 0.8)), url('https://imgur.com/ToNMKSN.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .hero-title {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero .hero-subtitle {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #C9A13D;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b1882f;
+}
+
+/* ================== DESIGN =================== */
+.design {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.design h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0B3D2E;
+}
+
+.design p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.design ul {
+    list-style: none;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+}
+
+.design ul li {
+    background: #EAF4EF;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-left: 5px solid #C9A13D;
+    border-radius: 8px;
+}
+
+/* ================== BENEFÍCIOS =================== */
+.benefits {
+    padding: 60px 0;
+    background-color: #0B3D2E;
+    color: #EAF4EF;
+    text-align: center;
+}
+
+.benefits h2 {
+    margin-bottom: 20px;
+    color: #A7FFD1;
+}
+
+.benefits p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* ================== LOCALIZAÇÃO =================== */
+.onde h2 {
+    text-align: center;
+    color: #0B3D2E;
+    margin-bottom: 20px;
+}
+
+.onde p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.onde ul {
+    list-style: none;
+    max-width: 800px;
+    margin: auto;
+}
+
+.onde ul li {
+    background: #EAF4EF;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-left: 5px solid #C9A13D;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Navegue no mapa */
+.onde iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Espaçamento entre seções */
+section {
+    padding: 80px 0;
+}
+
+/* Galeria em rolagem única */
+  
+.gallery {
+    background-color: #0B3D2E;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ Acordeão */
+
+.duvidas h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0B3D2E;
+}
+
+.faq details {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-left: 5px solid #C9A13D;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.faq summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq summary::marker {
+    content: "➕ ";
+    color: #C9A13D;
+}
+
+.faq details[open] summary::marker {
+    content: "➖ ";
+    color: #C9A13D;
+}
+
+.faq p {
+    margin-top: 10px;
+}
+
+/* Feedback */
+.feedback {
+    background-color: #0B3D2E;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+
+.feedback h2 {
+    margin-bottom: 30px;
+    color: #A7FFD1;
+}
+
+.feedback-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feedback-item {
+    background-color: #133D2C;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feedback-item p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.feedback-item span {
+    display: block;
+    color: #C9A13D;
+    font-weight: bold;
+}
+
+/* ================== FORMULÁRIO =================== */
+.contato {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #EAF4EF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #C9A13D;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #b1882f;
+}
+
+/* ================== WHATSAPP FLOAT =================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    width: 50px;
+}
+
+/* ================== FOOTER =================== */
+footer {
+    background-color: #0B3D2E;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    color: #C9A13D;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #b1882f;
+}
+
+/* ================== RESPONSIVO =================== */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header ul {
+        justify-content: center;
+    }
+
+    .hero .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .onde ul {
+        grid-template-columns: 1fr;
+    }
+}
